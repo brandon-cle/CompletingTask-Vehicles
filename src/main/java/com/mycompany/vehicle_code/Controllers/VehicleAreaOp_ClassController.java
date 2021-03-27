@@ -5,10 +5,19 @@
  */
 package com.mycompany.vehicle_code.Controllers;
 
+import com.mycompany.vehicle_code.JPanels.Pnl_VehicleAreaOp;
+
 /**
  *
  * @author Usuario
  */
 public class VehicleAreaOp_ClassController {
-    
+    //
+    //[SE RECALCA]Necesitamos una clase en donde vaya pueda crear un objeto vehículo.//
+    //Primeramente, declaro la variable principal; con la que es el papel de todo esto:
+    private Pnl_VehicleAreaOp pnl_VehicleAreaOp;
+    //--------------------------------------------------------------------------------
+    //
+    //Los pinceles
+    private DefaultComboBox cmbTargetStuck
 }
