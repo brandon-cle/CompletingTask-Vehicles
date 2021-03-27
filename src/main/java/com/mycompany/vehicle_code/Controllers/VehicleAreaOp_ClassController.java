@@ -6,6 +6,7 @@
 package com.mycompany.vehicle_code.Controllers;
 
 import com.mycompany.vehicle_code.JPanels.Pnl_VehicleAreaOp;
+import javax.swing.DefaultComboBoxModel;
 
 /**
  *
@@ -18,6 +19,11 @@ public class VehicleAreaOp_ClassController {
     private Pnl_VehicleAreaOp pnl_VehicleAreaOp;
     //--------------------------------------------------------------------------------
     //
-    //Los pinceles
-    private DefaultComboBox cmbTargetStuck
+    //Los pinceles de los combo box, ya están siendo creados:
+    private DefaultComboBoxModel cmbModel_Year;
+    private DefaultComboBoxModel cmbModel_Make;
+    private DefaultComboBoxModel cmbModel_Model;
+    private DefaultComboBoxModel cmbModel_EColor;
+    private DefaultComboBoxModel cmbModel_IColor;
+    private DefaultComboBoxModel cmbModel_Status;
 }
