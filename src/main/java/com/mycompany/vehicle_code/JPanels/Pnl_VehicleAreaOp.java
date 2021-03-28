@@ -162,12 +162,12 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         this.txt_Image = txt_Image;
     }
 
-    public JTextField getTxt_Stuck() {
-        return txt_Stuck;
+    public JTextField getTxt_Stock() {
+        return txt_Stock;
     }
 
-    public void setTxt_Stuck(JTextField txt_Stuck) {
-        this.txt_Stuck = txt_Stuck;
+    public void setTxt_Stock(JTextField txt_Stock) {
+        this.txt_Stock = txt_Stock;
     }
 
     public JTextField getTxt_Style() {
@@ -193,7 +193,7 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         btng_Transmission = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        txt_Stuck = new javax.swing.JTextField();
+        txt_Stock = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         cmb_Year = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
@@ -229,12 +229,12 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setText("StuckNumber=>");
+        jLabel1.setText("StockNumber=>");
         jPanel1.add(jLabel1, new java.awt.GridBagConstraints());
 
-        txt_Stuck.addActionListener(new java.awt.event.ActionListener() {
+        txt_Stock.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txt_StuckActionPerformed(evt);
+                txt_StockActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -245,7 +245,7 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.1;
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
-        jPanel1.add(txt_Stuck, gridBagConstraints);
+        jPanel1.add(txt_Stock, gridBagConstraints);
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel2.setText("Year:");
@@ -548,9 +548,9 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txt_StuckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_StuckActionPerformed
+    private void txt_StockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_StockActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_StuckActionPerformed
+    }//GEN-LAST:event_txt_StockActionPerformed
 
     private void rbtn_AutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbtn_AutoActionPerformed
         // TODO add your handling code here:
@@ -588,7 +588,7 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
     private javax.swing.JSpinner spn_Miles;
     private javax.swing.JTextField txt_Engine;
     private javax.swing.JTextField txt_Image;
-    private javax.swing.JTextField txt_Stuck;
+    private javax.swing.JTextField txt_Stock;
     private javax.swing.JTextField txt_Style;
     // End of variables declaration//GEN-END:variables
 }
