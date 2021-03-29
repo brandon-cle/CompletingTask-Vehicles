@@ -29,7 +29,8 @@ public class CustomRandom {
         
         */
         if(file_Head.length() == 0){
-            rafH.writeInt(0);
+            //Your DataOutputStream will be writing to a file, or perhaps a network connection
+            rafH.writeInt(0);//In simple terms it writes a 32-bit int value in big-endian.
             rafH.writeInt(0);
         }
     }
@@ -44,13 +45,12 @@ public class CustomRandom {
                 rafD.close();
             }
      }        
-     
-     
+    
     public RandomAccessFile getRafH()
     {
         return rafH;
     }
-    
+  
     public RandomAccessFile getRafD()
     {
         return rafD;

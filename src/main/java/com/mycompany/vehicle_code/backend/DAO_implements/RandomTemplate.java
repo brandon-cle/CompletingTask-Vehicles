@@ -6,6 +6,8 @@
 package com.mycompany.vehicle_code.backend.DAO_implements;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  *
@@ -23,14 +25,30 @@ For example, you might use template in Microsoft Word that is formatted as a bus
 //CABECERA Y SU SECCIÓN DE INFORMACIÓN; ASÍ SE HABRÁ EN QUÉ "GABETA" ESTÁ.
 abstract class RandomTemplate {
     private File file_Head; //CABEZERA
-    private File File_Data; //INFORMACIÓN
+    private File file_Data; //INFORMACIÓN
+    private CustomRandom customRandom;
 
     //CREANDO SU CONSTRUCTOR DE INFORMACIÓN:
-    public RandomTemplate(File file_Head, File File_Data) {
+    public RandomTemplate(File file_Head, File file_Data) {
         this.file_Head = file_Head;
-        this.File_Data = File_Data;
+        this.file_Data = file_Data;
     }
     
     //NECESITAMOS POR PARTE DE CUSTOM_RANDOM PARA DESIGNAR UN LUGAR DE ESTO
     //...
+    
+    protected CustomRandom getCustomRandom() throws FileNotFoundException, IOException{
+        if (customRandom == null){
+            customRandom = new CustomRandom(file_Head, file_Data);
+            return customRandom;
+        }
+        
+        return customRandom;
+    }
+    
+    protected void close() throws IOException
+    {
+        customRandom.close();
+        customRandom = null;
+    }
 }
