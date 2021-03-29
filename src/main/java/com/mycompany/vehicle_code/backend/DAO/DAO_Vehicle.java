@@ -13,8 +13,8 @@ import java.util.Collection;
  *
  * @author Usuario
  */
-//DE ESTA MANERA SE TENDRÁ EL ACCESO A ESTE, POR ID O POR ESTADO
-public interface Vehicle_DAO extends DAO<MainObj_Vehicle>{
+//DE ESTA MANERA SE TENDRÁ (ESO PLANTÉA LA INTERFAZ) EL ACCESO A ESTE, POR ID O POR ESTADO.
+public interface DAO_Vehicle extends DAO<MainObj_Vehicle>{
     
     MainObj_Vehicle fundById(int id) throws IOException;
     Collection<MainObj_Vehicle> findByStatus(String status) throws IOException;
