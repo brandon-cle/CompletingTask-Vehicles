@@ -57,9 +57,6 @@ public class Json_DAO_ImplementsOn_Vehicle extends RandomTemplate implements DAO
         getCustomRandom().getRafH().writeInt(k);
         
         close();
-        
-     
-        
     }
 
     @Override

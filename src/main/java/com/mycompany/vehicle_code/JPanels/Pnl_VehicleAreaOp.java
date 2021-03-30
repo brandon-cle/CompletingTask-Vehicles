@@ -222,6 +222,8 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         jLabel13 = new javax.swing.JLabel();
         cmb_Status = new javax.swing.JComboBox<>();
         btn_Browse = new javax.swing.JButton();
+        btn_Save = new javax.swing.JButton();
+        btn_Cancel = new javax.swing.JButton();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -545,8 +547,41 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(2, 2, 2, 2);
         jPanel1.add(btn_Browse, gridBagConstraints);
 
+        btn_Save.setText("Save");
+        btn_Save.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SaveActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 16;
+        jPanel1.add(btn_Save, gridBagConstraints);
+
+        btn_Cancel.setText("Cancel");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 16;
+        jPanel1.add(btn_Cancel, gridBagConstraints);
+
         add(jPanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
+
+    public JButton getBtn_Cancel() {
+        return btn_Cancel;
+    }
+
+    public void setBtn_Cancel(JButton btn_Cancel) {
+        this.btn_Cancel = btn_Cancel;
+    }
+
+    public JButton getBtn_Save() {
+        return btn_Save;
+    }
+
+    public void setBtn_Save(JButton btn_Save) {
+        this.btn_Save = btn_Save;
+    }
 
     private void txt_StockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_StockActionPerformed
         // TODO add your handling code here:
@@ -556,10 +591,16 @@ public class Pnl_VehicleAreaOp extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_rbtn_AutoActionPerformed
 
+    private void btn_SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_SaveActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSpinner Spn_Price;
     private javax.swing.JButton btn_Browse;
+    private javax.swing.JButton btn_Cancel;
+    private javax.swing.JButton btn_Save;
     private javax.swing.ButtonGroup btng_Transmission;
     private javax.swing.JComboBox<String> cmb_EColor;
     private javax.swing.JComboBox<String> cmb_IColor;

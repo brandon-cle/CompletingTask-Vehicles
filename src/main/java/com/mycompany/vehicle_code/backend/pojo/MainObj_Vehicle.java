@@ -25,7 +25,10 @@ public class MainObj_Vehicle {
     private String status;//20
     private Transmission transmission;//20
     
-
+    public MainObj_Vehicle()
+    {
+        
+    }
     //LOS VALORES EXISTENTES QUE TOMARÁ EL VEHICULO-OBJETO(RADIO BUTTON)
     public enum Transmission{
             AUTOMATIC, MANUAL
@@ -56,6 +59,7 @@ public class MainObj_Vehicle {
         this.engine = engine;
         this.image = image;
         this.status = status;
+        this.transmission = transmission;
     }
 
     public int getStockNumber() {
